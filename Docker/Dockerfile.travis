@@ -18,4 +18,5 @@
 FROM centos:7
 RUN yum update -y
 RUN yum groupinstall -y base
-RUN yum install -y git cmake mc tmux autoconf automake libtool curl make unzip wget clang gcc-c++
+RUN yum install -y git cmake mc tmux autoconf automake libtool curl make unzip wget centos-release-scl-rh devtoolset-3-gcc devtoolset-3-gcc-c++
+RUN scl enable devtoolset-3 bash

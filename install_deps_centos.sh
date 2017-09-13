@@ -54,9 +54,6 @@ make -j2
 make install
 popd
 
-export CC=/usr/bin/clang
-export CXX=/usr/bin/clang++
-
 pushd `pwd`
 cd ./third_party/snap-plugin-lib-cpp
 mkdir -p build
